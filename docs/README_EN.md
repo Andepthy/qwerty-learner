@@ -27,16 +27,24 @@
 
 ## 📸 Online Access
 
-We have deployed QWERTY Learner on many platforms. You can try QWERTY Learner in following ways.
+You can try QWERTY Learner on GitHub Pages:
 
-- Vercel: <https://qwerty.kaiyi.cool/>, or <https://qwerty-learner.vercel.app/>.
-- GitHub Pages: <https://realkai42.github.io/qwerty-learner/>.
-- Gitee Pages (recommended for people in mainland China): <https://kaiyiwing.gitee.io/qwerty-learner/>.
+- <https://andepthy.github.io/qwerty-learner/>
 
 QWERTY Learner also has a Visual Studio Code plugin. With a single click and you will be able to practice anytime.
 
 - Plugin: [VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)
 - Project: [GitHub](https://github.com/RealKai42/qwerty-learner-vscode)
+
+## Quick Deployment
+
+### GitHub Pages
+
+Push to the `master` branch and the [`deploy-pages.yml`](../.github/workflows/deploy-pages.yml) workflow will build and publish the site to:
+
+<https://andepthy.github.io/qwerty-learner/>
+
+Before the first deployment, open `Settings` -> `Pages` in the GitHub repository and set `Build and deployment` -> `Source` to `GitHub Actions`. No `gh-pages` branch, `deploy_key`, Vercel project, or other deployment platform is required.
 
 ## ✨ Design Goals
 

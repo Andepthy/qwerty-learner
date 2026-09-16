@@ -5,7 +5,6 @@ import { FriendLinks } from './pages/FriendLinks'
 import MobilePage from './pages/Mobile'
 import TypingPage from './pages/Typing'
 import { isOpenDarkModeAtom } from '@/store'
-import { Analytics } from '@vercel/analytics/react'
 import 'animate.css'
 import { useAtomValue } from 'jotai'
 import mixpanel from 'mixpanel-browser'
@@ -38,7 +37,7 @@ function Root() {
     const handleResize = () => {
       const isMobile = window.innerWidth <= 600
       if (!isMobile) {
-        window.location.href = '/'
+        window.location.href = import.meta.env.BASE_URL
       }
       setIsMobile(isMobile)
     }
@@ -49,7 +48,7 @@ function Root() {
 
   return (
     <React.StrictMode>
-      <BrowserRouter basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
+      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || undefined}>
         <Suspense fallback={<Loading />}>
           <Routes>
             {isMobile ? (
@@ -68,7 +67,6 @@ function Root() {
           </Routes>
         </Suspense>
       </BrowserRouter>
-      <Analytics />
     </React.StrictMode>
   )
 }

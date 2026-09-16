@@ -21,7 +21,6 @@ import IconWechat2 from '~icons/simple-icons/wechat'
 import IconWechat from '~icons/tabler/brand-wechat'
 import IconCoffee from '~icons/tabler/coffee'
 import IconTerminal2 from '~icons/tabler/terminal-2'
-import IconFlagChina from '~icons/twemoji/flag-china'
 
 const Footer: React.FC = () => {
   const [infoPanelState, setInfoPanelState] = useAtom(infoPanelStateAtom)
@@ -118,7 +117,7 @@ const Footer: React.FC = () => {
         <br />
         <p className="text-sm text-gray-500  dark:text-gray-400">再次感谢您的支持和关注！</p>
         <br />
-        <img className="ml-1 w-2/6 " src="https://qwerty.kaiyi.cool/weChat-group.png" alt="weChat-group" />
+        <img className="ml-1 w-2/6 " src={`${import.meta.env.BASE_URL}weChat-group.png`} alt="weChat-group" />
         <br />
       </InfoPanel>
 
@@ -215,12 +214,6 @@ const Footer: React.FC = () => {
         <a rel="noreferrer" className="cursor-pointer focus:outline-none" onClick={() => navigate('/friend-links')} aria-label="查看友链">
           <RiLinksLine fontSize={14} className="text-gray-500 hover:text-indigo-400 dark:text-gray-400 dark:hover:text-indigo-400" />
         </a>
-
-        <Tooltip content="中国大陆镜像">
-          <a href="https://kaiyiwing.gitee.io/qwerty-learner" target="_self" title="前往中国大陆镜像">
-            <IconFlagChina fontSize={16} />
-          </a>
-        </Tooltip>
 
         <button
           className="cursor-pointer text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"

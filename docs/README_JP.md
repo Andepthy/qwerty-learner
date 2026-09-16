@@ -28,11 +28,7 @@
 
 ## 📸 オンラインアクセス
 
-Vercel: <https://qwerty.kaiyi.cool/> , <https://qwerty-learner.vercel.app/>
-GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
-Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
-
-国内ユーザーは Gitee を使用することをお勧めします
+GitHub Pages: <https://andepthy.github.io/qwerty-learner/>
 <br/>
 <br/>
 
@@ -44,14 +40,13 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 ## クイックデプロイ
 
-### Vercel
+### GitHub Pages
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FRealKai42%2Fqwerty-learner)
+`master` ブランチへプッシュすると、[`deploy-pages.yml`](../.github/workflows/deploy-pages.yml) が自動的にビルドして次へ公開します：
 
-#### デプロイ手順
+<https://andepthy.github.io/qwerty-learner/>
 
-1. `Vercel Build & Development Settings` -> `Output Directory` を "build" に更新します。
-2. デプロイボタンをクリックします。
+初回デプロイ前に、GitHub リポジトリの `Settings` -> `Pages` で `Build and deployment` の `Source` を `GitHub Actions` に設定してください。`gh-pages` ブランチ、`deploy_key`、Vercel、その他の外部デプロイサービスは必要ありません。
 
 <br />
 
@@ -228,7 +223,7 @@ MacOS ユーザーの場合、[install.sh](scripts/install.sh) スクリプト�
 
 ## ☕️ コーヒーを買ってください
 
-Qwerty Learner をご利用いただき、誠にありがとうございます。現在、このウェブサイトは 3 人のメンバーが余暇を利用して維持しています。将来的には、独自のドメインを購入し（現在は vercel を使用してデプロイ）、国内ユーザーのアクセスとクラウド同期データのためにサーバーを購入する予定です。
+Qwerty Learner をご利用いただき、誠にありがとうございます。現在、このウェブサイトは 3 人のメンバーが余暇を利用して維持しています。将来的には、独自のドメインを購入し（現在は GitHub Pages を使用してデプロイ）、国内ユーザーのアクセスとクラウド同期データのためにサーバーを購入する予定です。
 
 このソフトウェアが気に入った場合、将来のサポートに感謝します！
 

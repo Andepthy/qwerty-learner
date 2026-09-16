@@ -32,12 +32,7 @@
 
 ## 📸 在线访问
 
-**首选部署**: <https://qwerty.kaiyi.cool/>
-GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
-
-镜像仓库:
-[GitCode: RealKai42/qwerty-learner](https://gitcode.com/RealKai42/qwerty-learner/overview)
-[Gitee: KaiyiWing/qwerty-learner](https://gitee.com/KaiyiWing/qwerty-learner)
+**GitHub Pages**: <https://andepthy.github.io/qwerty-learner/>
 <br/>
 <br/>
 
@@ -49,14 +44,13 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 
 ## 快速部署
 
-### Vercel
+### GitHub Pages
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FRealKai42%2Fqwerty-learner)
+将代码推送到 `master` 分支后，[`deploy-pages.yml`](./.github/workflows/deploy-pages.yml) 会自动构建并发布到：
 
-#### 部署步骤
+<https://andepthy.github.io/qwerty-learner/>
 
-1. 更新 `Vercel Build & Development Settings` -> `Output Directory`："build"
-2. Click Deploy Button
+首次部署前，请在 GitHub 仓库的 `Settings` -> `Pages` 中，将 `Build and deployment` 的 `Source` 设置为 `GitHub Actions`。无需 `gh-pages` 分支、`deploy_key` 或任何外部部署平台。
 
 <br />
 
@@ -164,7 +158,7 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 
 ### 手动安装
 
-1. 在命令行中执行 `git clone https://github.com/RealKai42/qwerty-learner.git` 将项目拉取到本地, 如果不使用 git 可能因为缺少依赖而无法运行
+1. 在命令行中执行 `git clone https://github.com/Andepthy/qwerty-learner.git` 将项目拉取到本地, 如果不使用 git 可能因为缺少依赖而无法运行
 2. 在命令行中执行 `cd qwerty-learner`，进入项目根目录，执行`yarn install`来下载依赖。
 3. 执行`yarn start`来启动项目，项目默认地址为`http://localhost:5173/`
 4. 在浏览器中打开`http://localhost:5173/`来访问项目。
@@ -261,7 +255,7 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 
 ## ☕️ Buy us a coffe
 
-非常感谢大家使用 Qwerty Learner, 目前该网站由三个人用业余时间在维护，我们希望在未来购买独立的域名(目前使用 vercel 部署)，并购买服务器以方便国内用户访问与云同步存储数据。
+非常感谢大家使用 Qwerty Learner, 目前该网站由三个人用业余时间在维护，我们希望在未来购买独立的域名(目前使用 GitHub Pages 部署)，并购买服务器以方便国内用户访问与云同步存储数据。
 
 如果您喜欢我们软件，非常感谢您对我们未来的支持!
 
